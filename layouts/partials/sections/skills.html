@@ -1,12 +1,12 @@
 {{/* Default data */}}
 {{ $title := "Don't measure your skills in percentages" }}
 {{ $skills := slice
-  (dict "title" "Programming Languages" "icon" "bx-code" "text" "Experienced in programming languages such as Python, JavaScript, Java, and C++. Proficient in object-oriented programming, functional programming, and scripting. Well-versed in data structures, algorithms, and design patterns.")
-  (dict "title" "Web Development" "icon" "bx-code-alt" "text" "Experienced in web development technologies such as HTML, CSS, and JavaScript. Proficient in front-end frameworks such as React, Angular, and Vue.js. Well-versed in responsive design, cross-browser compatibility, and web performance optimization.")
-  (dict "title" "Backend Development" "icon" "bx-server" "text" "Experienced in backend development technologies such as Node.js, Express, and Django. Proficient in RESTful APIs, GraphQL, and microservices architecture. Well-versed in database management using SQL and NoSQL databases.")
-  (dict "title" "CI/CD Pipelines" "icon" "bx-git-branch" "text" "Experienced in setting up CI/CD pipelines using Jenkins, GitHub Actions, and GitLab CI/CD. Proficient in automating build, test, and deployment processes. Well-versed in version control using Git and GitHub.")
-  (dict "title" "Agile Methodologies" "icon" "bxl-trello" "text" "Experienced in working with Agile methodologies such as Scrum and Kanban. Proficient in conducting sprint planning, daily standups, sprint reviews, and retrospectives. Well-versed in using Jira, Trello, and other tools.")
-  (dict "title" "DevOps Practices" "icon" "bxl-dev-to" "text" "Experienced in implementing DevOps practices such as infrastructure as code, configuration management, and monitoring. Proficient in using tools such as Terraform, Ansible, and Prometheus. Well-versed in logging, monitoring, and alerting.")
+  (dict "title" "Data Indexing" "icon" "bx-book-content" "text" "2 U.S. patents")
+  (dict "title" "Storage Systems" "icon" "bx-server" "text" "7 publications")
+  (dict "title" "ML Systems" "icon" "bxl-graphql" "text" "2 novel checkpointing solutions")
+  (dict "title" "CXL" "icon" "bx-chip" "text" "Novel user-space library, device characterization")
+  (dict "title" "Key-Value SSD" "icon" "bxs-hdd" "text" "1 U.S. patent, 3 data indexing schemes, 1 KV emulator")
+  (dict "title" "Persistent Memory" "icon" "bxs-memory-card" "text" "2 libraries for NVDIMM- and CXL-attached PM")
 }}
 
 {{/* Custom data from configuration file */}}
@@ -17,10 +17,10 @@
 {{ end }}
 
 
-<h2 class="text-4xl md:text-5xl lg:text-7xl p-5 text-center font-medium font-poppins text-gray-400">
+<h2 class="text-4xl md:text-5xl lg:text-7xl p-5 text-center font-medium font-poppins text-blue-primary">
   {{ $title }}
 </h2>
-<div class="-mx-5 flex flex-wrap text-gray-600 text-center">
+<div class="-mx-5 flex flex-wrap text-blue-primary text-center">
   {{ range $skills }}
     <div class="w-full md:w-1/2 lg:w-1/3 px-5">
       <div class="mb-9 rounded-xl p-7 sm:p-9 lg:px-6 xl:px-9 bg-gray-50">

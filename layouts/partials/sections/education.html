@@ -1,9 +1,10 @@
 {{/* Default data */}}
 {{ $title := "Educational journey" }}
 {{ $educations := slice
-  (dict "title" "University" "date" "2015 - 2020" "text" "Graduated with a Bachelor's degree in Computer Science. Specialized in software engineering, web development, and data science. Completed a thesis on machine learning algorithms for image recognition.")
-  (dict "title" "High School" "date" "2005 - 2015" "text" "Experienced in web development technologies such as HTML, CSS, and JavaScript. Proficient in front-end frameworks such as React, Angular, and Vue.js. Well-versed in responsive design, cross-browser compatibility, and web performance optimization.")
-  (dict "title" "Kindergarten" "date" "2000 - 2005" "text" "Experienced in backend development technologies such as Node.js, Express, and Django. Proficient in RESTful APIs, GraphQL, and microservices architecture. Well-versed in database management using SQL and NoSQL databases.")
+  (dict "title" "Florida International University" "date" "Expected May 2025" "text" "Ph.D. in Computer Science")
+  (dict "title" "University of Texas at El Paso" "date" " " "text" "M.S. in Computer Science")
+  (dict "title" "University of Dhaka" "date" " " "text" "MBA (Marketing)")
+  (dict "title" "North South University" "date" "" "text" "B.S. in Electronic and Telecommunication Engineering")
 }}
 
 {{/* Custom data from configuration file */}}
@@ -14,12 +15,12 @@
 {{ end }}
 
 
-<h2 class="text-center p-5 text-4xl md:text-5xl lg:text-7xl font-medium font-poppins text-gray-400">
+<h2 class="text-center p-5 text-4xl md:text-5xl lg:text-7xl font-medium font-poppins text-blue-primary">
   {{ $title }}
 </h2>
-<div class="-mx-5 flex flex-wrap text-gray-600">
+<div class="-mx-5 flex flex-wrap text-blue-300">
   {{ range $educations }}
-    <div class="w-full md:w-1/2 lg:w-1/3 px-5">
+    <div class="w-full md:w-1/4 lg:w-1/4 px-5">
       <div class="mb-9 rounded-xl p-7 sm:p-9 lg:px-6 xl:px-9 bg-gray-50">
         <div>
           <h3 class="mb-4 text-lg font-medium sm:text-xl lg:text-lg xl:text-xl">{{ .title }}</h3>

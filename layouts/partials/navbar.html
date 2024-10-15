@@ -1,7 +1,7 @@
 {{/* Default data */}}
 {{ $logo := "img/default-logo.svg" }}
 {{ $logoLink := "/" }}
-{{ $title := "#hugo-porto" }}
+{{ $title := "Manoj Pravakar" }}
 
 {{ $buttonEnabled := true }}
 {{ $buttonText := "Download CV" }}
@@ -9,9 +9,6 @@
 {{ $buttonTarget := "_blank" }}
 
 {{ $menu := slice
-  (dict "link" "/" "target" "_self" "text" "Home" "description" "Navigate to home page")
-  (dict "link" "/posts" "target" "_self" "text" "Posts" "description" "Navigate to posts section")
-  (dict "link" "/tags" "target" "_self" "text" "Tags" "description" "Navigate to tags section")
 }}
 
 {{/* Custom data from configuration file */}}
@@ -63,7 +60,7 @@
         <li class="px-5">
           <a href="{{ $buttonLink }}" target="{{ $buttonTarget }}">
             <button
-              class="px-10 py-4 bg-white hover:bg-gray-600 hover:text-white rounded-lg font-normal text-base transition duration-300">
+              class="px-10 py-4 bg-white hover:bg-blue-primary hover:text-white rounded-lg font-normal text-base transition duration-300">
               {{ $buttonText }}
             </button>
           </a>
